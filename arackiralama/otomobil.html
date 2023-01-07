@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araç Kiralama</title>
+    <link rel="stylesheet" href="otomobil.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <ul class="nav nav-item navbar bg-dark ">
+        <li> <p>&nbsp;</p></li><li> <p>&nbsp;</p></li><li> <p>&nbsp;</p></li><li> <p>&nbsp;</p></li><li> <p>&nbsp;</p></li>
+        <li class="nav-item">
+           <a class="nav-link active " data-bs-toggle="tab" href="#anasayfa"style><b>ARAÇ KİRALAMA</b></a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link " data-bs-toggle="tab" href="#anasayfa"><b>Anasayfa</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#rezervasyon"><b>Rezervasyon Yönetimi</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#arac"><b>Araçlar</b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab"  href="#iletisim"><b>İletişim</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab"  href="#giris"><b>Üye Girişi</b></a>
+          </li>
+          <li> <p>&nbsp;</p></li><li> <p>&nbsp;</p></li><li> <p>&nbsp;</p></li>
+        <li>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Metni Giriniz..." aria-label="Search">
+            <button class="btn btn-info" type="submit"><b>Arama</b></button>
+          </form></li>
+          <li> <p>&nbsp;</p></li><li> <p>&nbsp;</p></li><li> <p>&nbsp;</p></li><li> <p>&nbsp;</p></li>
+      </ul>
+      <!-- anasayfa -->
+      <br>
+      <div id="sayfa">
+        <div  class="tab-content">
+      <div  class="tab-pane container active" id="anasayfa">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/3.jpg" class="d-block w-100" alt="..." >
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- rezervasyon -->
+<br>
+    <div  class="tab-content">
+      <div  class="tab-pane container fade" id="rezervasyon">
+    <table class="baslik " width="100%" height="79"  cellpadding="3" cellspacing="3">
+      <tr>
+        <td height="78" ><div align="center">
+            <h2 >Rezervasyon İptal / Güncelleme</h2>
+        </div></td>
+      </tr></table><br>
+      <table width="70%"  align="center" cellpadding="3" cellspacing="3">
+        <tr>
+          <td width="49%" rowspan="2"><img src="img/3.png" width="368" height="240" /></td>
+          <td width="51%"><h4>Rezervasyonunuzu güncellemek veya iptal etmek için rezervasyon numaranızı ve soyadınızı giriniz.</h4></td>
+        </tr>
+        <tr>
+          <td><form id="form1" name="form1" method="post" action="">
+            <p><label for="soyad"></label> Soyadınız<br>
+            </z> 
+              <input type="text" name="soyad" id="soyad" class="rounded shadow" style="width: 400px; "/>
+            </p>
+              <label for="no">Rezervasyon Numarası<br> 
+              <input type="text" name="no" id="no" class="rounded shadow" style="width: 400px; "/></label>
+            </form></td>
+        </tr>
+      </table>
+    </div>  </div>
+  
+
+    <!-- araç -->
+    <div  class="tab-content">
+      <div  class="tab-pane container fade" id="arac">
+        <table class="baslik " width="100%" height="79"  cellpadding="3" cellspacing="3">
+          <tr>
+            <td height="78" ><div align="center">
+                <h2 >Araçlarımız</h2>
+            </div></td>
+          </tr></table><br>
+          <div class="row">
+         <div class="col-sm-4">
+          <div class="card" style="width: 18rem;">
+            <img src="img/honda.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Honda Civic</h5>
+              <p class="card-text">Minumum 19 yaş.<br>
+              Minumum 6 Aylık Ehliyet <br>
+              1 Gün Kiralama Bedeli 350TL.<br>
+              Depozito Bedeli 1000TL.</p>
+              <a href="#" class="btn btn-primary">Rezervasyon Oluştur</a>
+            </div>
+          </div>
+        </div>
+      
+   
+        <div class="col-sm-4">
+         <div class="card" style="width: 18rem;">
+           <img src="img/Citroen.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">Citroen C3 Aircross</h5>
+             <p class="card-text">Minumum 21 yaş.<br>
+             Minumum 6 Aylık Ehliyet <br>
+             1 Gün Kiralama Bedeli 550TL.<br>
+             Depozito Bedeli 1400TL.</p>
+             <a href="#" class="btn btn-primary">Rezervasyon Oluştur</a>
+           </div>
+         </div>
+       </div>
+
+       <div class="col-sm-4">
+        <div class="card" style="width: 18rem;">
+          <img src="img/Opel.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Opel Mokka</h5>
+            <p class="card-text">Minumum 22 yaş.<br>
+            Minumum 6 Aylık Ehliyet <br>
+            1 Gün Kiralama Bedeli 650TL.<br>
+            Depozito Bedeli 1400TL.</p>
+            <a href="#" class="btn btn-primary">Rezervasyon Oluştur</a>
+          </div>
+        </div>
+      </div>
+      </div><br>
+
+       <div class="row">
+         <div class="col-sm-4">
+          <div class="card" style="width: 18rem;">
+            <img src="img/hundai.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Humdai i20</h5>
+              <p class="card-text">Minumum 20 yaş.<br>
+              Minumum 6 Aylık Ehliyet <br>
+              1 Gün Kiralama Bedeli 500TL.<br>
+              Depozito Bedeli 1200TL.</p>
+              <a href="#" class="btn btn-primary">Rezervasyon Oluştur</a>
+            </div>
+          </div>
+        </div>
+      
+   
+        <div class="col-sm-4">
+         <div class="card" style="width: 18rem;">
+           <img src="img/Peugeot.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">Peugeot 301</h5>
+             <p class="card-text">Minumum 19 yaş.<br>
+             Minumum 6 Aylık Ehliyet <br>
+             1 Gün Kiralama Bedeli 450TL.<br>
+             Depozito Bedeli 1100TL.</p>
+             <a href="#" class="btn btn-primary">Rezervasyon Oluştur</a>
+           </div>
+         </div>
+       </div>
+
+       <div class="col-sm-4">
+        <div class="card" style="width: 18rem;">
+          <img src="img/Toyota.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Toyota Yaris Cross</h5>
+            <p class="card-text">Minumum 20 yaş.<br>
+            Minumum 6 Aylık Ehliyet <br>
+            1 Gün Kiralama Bedeli 550TL.<br>
+            Depozito Bedeli 1400TL.</p>
+            <a href="#" class="btn btn-primary">Rezervasyon Oluştur</a>
+          </div>
+        </div>
+      </div>
+      </div>  
+      </div>
+    </div></div>
+
+<!-- iletisim -->
+    <div  class="tab-content">
+      <div  class="tab-pane container fade" id="iletisim">
+        <table class="baslik " width="100%" height="79"  cellpadding="3" cellspacing="3">
+          <tr>
+            <td height="78" ><div align="center">
+                <h2 >İletişim</h2>
+            </div></td>
+          </tr></table><br>
+
+
+          <div class="row">
+            <div class="col-sm-4">
+             <div class="card rounded shadow" style="width: 18rem;">
+               <div class="card-body">
+                 <h5 class="card-title">Rezervasyonlarınız İçin</h5>
+                 <p class="card-text">Hafta içi ve hafta sonu 09:00 - 19:00 saatleri arasında ise 444 28 47 / 444  numaralı hattımızdan 1’i tuşlayarak Rezervasyon Merkezimize ulaşabilirsiniz.
+                  www.arackiralama.com.tr web sitemizden rezervasyonlarınızı online olarak da gerçekleştirebilirsiniz.
+                  Yurt dışı aramaları için numaramız + 90 (216) 444 28 47</p>
+               </div>
+             </div>
+           </div>
+         
+           <div class="col-sm-4">
+            <div class="card rounded shadow" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Tam Destek Hizmeti</h5>
+                <p class="card-text">Arıza, kaza ve benzeri her türlü acil durumda 444 28 47 / 444  numaralı hattımızdan 2’yi tuşlayarak 7 gün 24 saat bizlere ulaşabilir ve yol yardım hizmeti alabilirsiniz. Ayrıca üye olarak web sitemize giriş yaptığınızda da  Tam Destek Hizmetlerinden yararlanabilirsiniz.</p>
+               
+              </div>
+            </div>
+          </div>
+      
+           <div class="col-sm-4">
+            <div class="card rounded shadow" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Müşteri İlişkileri</h5>
+              <p>Her türlü öneri, talep, eleştiri ve yorumlarınız için hafta içi 08:00 – 17:00 saatleri arasında 444 28 47 / 444  numaralı hattımızdan 3’ü tuşlayarak İletişim Merkezimizden, web sitemizde bulunan iletişim formumuz aracılığıyla bize ulaşabilirsiniz.</p>
+              
+              </div>
+            </div>
+          </div>
+         </div>
+   
+      </div>
+    </div></div>
+<!-- giris -->
+       <div  class="tab-content">
+      <div  class="tab-pane container fade" id="giris">
+<h1>Lütfen Bilgilerinizi Giriniz.</h1>
+        <div>
+          <form class="giris">
+            <div class="col-4 ">
+              <label for="mail">Email Adresiniz 
+                  <input name="mail" id="mail" type="text" class="form-control"  aria-label="Input group example" aria-describedby="btnGroupAddon" style="width: 200px">
+              </label> 
+         </div> 
+         <div class="col-4 ">
+     <label  for="sifre">Şifre</label>
+     <input type="password" class="form-control" style="width: 200px" />
+    </div>
+    
+    <a href="#" >Şifremi Unuttum!</a>  <br/><br>
+    <button type="button" class="btn btn-primary" href="anasayfa.html" >Giriş Yap</button><br><br>
+    <p>Henüz üye olmadınız mı?<br/>
+      Kayıt olmak için <b><u><a href="#">tıklayınız.</a></u></b>
+      
+      </p>
+    </form>
+   
+     </div></div></div>
+
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
